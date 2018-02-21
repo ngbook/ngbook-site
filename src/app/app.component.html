@@ -1,8 +1,9 @@
 <div class="app-root">
     <div class="items">
-        <div class="item" *ngFor="let demo of data">
+        <a class="item" *ngFor="let demo of data"
+            [href]="demo.link">
             <img src="{{demo.pic}}" alt="{{demo.title}}">
             <p class="desc">{{demo.title}}</p>
-        </div>
+        </a>
     </div>
 </div>
